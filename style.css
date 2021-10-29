@@ -41,3 +41,8 @@ nav a {
 
 }
 
+@media ( max-width: 800px) {
+.sub-nav { 
+    border: 2px solid blue;
+}
+}
