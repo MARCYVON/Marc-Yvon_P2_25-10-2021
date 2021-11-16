@@ -99,6 +99,7 @@ color: var(--blue);
 .search-form input {
   padding-right: 6rem;  
   border: 1px solid var(--lightgrey);
+  overflow: auto ;
 
 }
 
@@ -115,13 +116,23 @@ color: var(--blue);
 
 .search-form button:hover {
     opacity: 1;
-    transform: scale(1.05);
+    transform: scale(1.03);
+}
+
+
+.fas.fa-search {
+    display: none;
 }
 
 @media (max-width: 800px) {
     .search-form .search-text {
       display: none;  
     }
+}
+
+.fa.fa-search {
+    display: inline;
+    background-color: inherit ;
 }
  
     
