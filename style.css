@@ -5,14 +5,17 @@
     box-sizing: border-box;
     font-family: "Raleway","sans-serif";
 }
+
+body {
+    margin: 0;
+}
 a {
     color:  inherit;
     text-decoration: none;
 }
 
-
+/* Navbar */
 nav {
-    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -21,9 +24,10 @@ nav {
 
 nav a {
     padding: 2rem; 
+    border-top: 3px solid transparent;
 }
 .nav a:hover {
-    border-top: 3px solid blue;
+    border-top-color: blue;
 }
 
 #logo {
@@ -37,12 +41,88 @@ nav a {
 }
 
 .sub-nav {
-    border: 1px solid green;
+    display: flex
 
 }
+
 
 @media ( max-width: 800px) {
 .sub-nav { 
-    border: 2px solid blue;
+    order: 1;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+
+.sub-nav a {
+    flex-basis: 50%;
+    border-bottom: 3px solid var(--lightgrey);
+}
+
+
+.sub-nav a :hover {
+border-bottom: 3px solid var(--blue);
+border-top: 3px solid transparent;
+color: var(--blue);
 }
 }
+
+/* Body */
+.wrapper {
+    padding: 0 2rem;
+}
+
+.wrapper h1, .wrapper p{
+    margin-bottom: 1rem;
+}
+
+/* Search-form > */
+.search-form {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.search-form *{
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+}
+
+
+
+
+.search-form i {
+    background-color: var(--lightgrey);
+    border-radius: 1rem 0 0 1rem;
+}
+
+.search-form input {
+  padding-right: 6rem;  
+  border: 1px solid var(--lightgrey);
+
+}
+
+.search-form button {
+   background-color: var(--blue); 
+   color: white;
+   font-weight: bold;
+   border-radius: 0 1rem 1rem 0;
+   border: none;
+   cursor: pointer;
+   opacity: 0,9;
+   transition: transform 200;
+}
+
+.search-form button:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+@media (max-width: 800px) {
+    .search-form .search-text {
+      display: none;  
+    }
+}
+ 
+    
+
