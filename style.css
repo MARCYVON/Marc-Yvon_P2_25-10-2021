@@ -374,13 +374,34 @@ body {
   height: 200px;
   border-radius: 15px 15px 0 0;
 }
-/*responsive*/
+/* footer */
+.footer {
+  height: 300px;
+  margin-top: 100px;
+}
+.taille-bloc-foot {
+  height: 150px;
+}
+.marge-bloc-foot1 {
+  margin-left: 5%;
+}
+.marge-bloc-foot3 {
+  margin-right: 15%;
+}
+.lien-foot {
+  color: black;
+}
+.div-lien-foot {
+  height: 30px;
+}
+/* responsive */
+
 @media screen and (max-width: 1295px) {
   .size-lien12 {
     margin-left: 35%;
   }
-  .cube-details-hebergements{
-    min-width: 150px;
+  .cube-details-hebergements {
+    min-height: 150px;
   }
   .size-hebergements {
     min-height: auto;
@@ -394,7 +415,6 @@ body {
     margin-top: 0;
   }
 }
-
 @media screen and (max-width: 990px) {
   .mobile-filtre-wrap {
     flex-direction: column;
@@ -420,7 +440,7 @@ body {
     margin-top: 50px;
     padding: 5%;
   }
-} 
+}
 @media screen and (max-width: 770px) {
   .size-liens {
     width: 90%;
